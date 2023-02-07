@@ -13,13 +13,12 @@ public class Main {
 		}
 		Arrays.sort(user_data);
 		double median;
-		if (user_data.length % 2 == 0){
-			double mid1 = user_data[user_data.length/2 - 1];
-			double mid2 = user_data[user_data.length/2];
-			median = (mid1 + mid2 ) / 2 ;
-		}
-		else {
-			median = user_data[user_data.length / 2] ;
+		if (user_data.length % 2 == 0) {
+			double mid1 = user_data[user_data.length / 2 - 1];
+			double mid2 = user_data[user_data.length / 2];
+			median = (mid1 + mid2) / 2;
+		} else {
+			median = user_data[user_data.length / 2];
 		}
 		System.out.println(median);
 	}
